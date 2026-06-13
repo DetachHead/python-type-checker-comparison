@@ -1,0 +1,24 @@
+name: validation
+
+on: push
+
+permissions:
+  contents: "write"
+  packages: "write"
+  pull-requests: "read"
+
+jobs:
+  static_checks:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+
+      - run: ./pw uv sync --locked
+
+      - run: ./pw dprint
+        if: always()
+
+      - run: ./pw uv run zensical build --strict
+        if: always()

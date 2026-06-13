@@ -1,0 +1,54 @@
+{
+  "editor.formatOnSave": true,
+  "git.allowForcePush": true,
+  "git.autofetch": "all",
+  "git.autoStash": true,
+  "git.pruneOnFetch": true,
+  "git.rebaseWhenSync": true,
+  "git.suggestSmartCommit": false,
+  "git.supportCancellation": true,
+  "git.useEditorAsCommitInput": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.useForcePushIfIncludes": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "files.autoSave": "onFocusChange",
+  "search.useIgnoreFiles": true,
+  "git.useCommitInputAsStashMessage": true,
+  "files.eol": "\n",
+  // why does vscode treat github actions yaml files as a separate language????
+  "[toml][json][jsonc][yaml][css][markdown][github-actions-workflow]": {
+    "editor.defaultFormatter": "dprint.dprint"
+  },
+  "explorer.compactFolders": false,
+  "search.exclude": {
+    "pw": true
+  },
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "terminal.integrated.env.windows": {
+    "PATH": "${env:PATH};${workspaceFolder}/.pyprojectx/main"
+  },
+  "terminal.integrated.env.osx": {
+    "PATH": "${env:PATH}:${workspaceFolder}/.pyprojectx/main"
+  },
+  "terminal.integrated.env.linux": {
+    "PATH": "${env:PATH}:${workspaceFolder}/.pyprojectx/main"
+  },
+  "task.problemMatchers.neverPrompt": true,
+  "editor.suggest.showWords": false,
+  "files.readonlyInclude": {
+    ".pyprojectx/**/*": true,
+    ".venv/**/*": true,
+    "**/dist/**/*": true,
+    "uv.lock": true,
+    "pw.lock": true,
+    "pw": true,
+    "pw.bat": true
+  },
+  "chat.disableAIFeatures": true,
+  "dprint.path": ".vscode/dprint", // https://github.com/dprint/dprint/issues/859#issuecomment-3194102785
+  "git.blame.editorDecoration.enabled": true,
+  "[markdown]": {
+    // markdown tables are impossible to edit when word wrap is on
+    "editor.wordWrap": "off"
+  }
+}

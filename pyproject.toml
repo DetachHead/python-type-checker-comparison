@@ -1,0 +1,13 @@
+[project]
+name = "type-checker-rule-comparison"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "dprint-py>=0.53.1.0",
+  "zensical>=0.0.45",
+]

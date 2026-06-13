@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "install dependencies",
+      "type": "shell",
+      "command": "./pw",
+      "args": [
+        "uv",
+        "sync"
+      ],
+      "presentation": {
+        "clear": true
+      },
+    },
+    {
+      "label": "dprint",
+      "type": "shell",
+      "command": "./pw",
+      "args": ["uv", "run", "dprint", "fmt"],
+      "presentation": {
+        "clear": true
+      }
+    },
+    {
+      "label": "docs",
+      "type": "shell",
+      "command": "./pw",
+      "args": ["uv", "run", "zensical", "serve"],
+      "presentation": {
+        "clear": true
+      }
+    },
+  ]
+}

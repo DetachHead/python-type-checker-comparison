@@ -1,0 +1,4 @@
+/* increase the width of the main content section */
+.md-grid {
+  max-width: 1800px;
+}
