@@ -1,5 +1,4 @@
 {
-  "editor.formatOnSave": true,
   "git.allowForcePush": true,
   "git.autofetch": "all",
   "git.autoStash": true,
@@ -16,8 +15,9 @@
   "git.useCommitInputAsStashMessage": true,
   "files.eol": "\n",
   // why does vscode treat github actions yaml files as a separate language????
-  "[toml][json][jsonc][yaml][css][markdown][github-actions-workflow]": {
-    "editor.defaultFormatter": "dprint.dprint"
+  "[toml][json][javascript][jsonc][yaml][css][markdown][github-actions-workflow]": {
+    "editor.defaultFormatter": "dprint.dprint",
+    "editor.formatOnSave": true
   },
   "explorer.compactFolders": false,
   "search.exclude": {
