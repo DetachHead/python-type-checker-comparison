@@ -11,7 +11,7 @@
       ],
       "presentation": {
         "clear": true
-      },
+      }
     },
     {
       "label": "dprint",
@@ -30,6 +30,6 @@
       "presentation": {
         "clear": true
       }
-    },
+    }
   ]
 }
