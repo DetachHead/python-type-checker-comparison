@@ -17,7 +17,7 @@ jobs:
 
       - run: ./pw uv sync --locked
 
-      - run: ./pw dprint
+      - run: ./pw uv run dprint check
         if: always()
 
       - run: ./pw uv run zensical build --strict
