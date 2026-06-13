@@ -2,7 +2,7 @@
 
 This table is created and maintained by the maintainer of [basedpyright](https://docs.basedpyright.com).
 
-When I forked pyright in 2023, it was the best python type checker and language server at the time, but it was deliberately was held back by microsoft
+When I forked pyright in 2023, it was the best python type checker and language server at the time, but it was deliberately held back by microsoft
 and their desire to lock as many people into VSCode as possible. I created basedpyright because the state of python type checkers and language servers was totally unacceptable to me as a user, and if I was going to
 be forced to use this language, I had to fix the problem myself.
 
