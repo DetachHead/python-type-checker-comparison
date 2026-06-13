@@ -13,6 +13,8 @@
 site_name = "Type Checker Rule Comparison Table"
 
 repo_url = "https://github.com/detachhead/python-type-checker-comparison"
+# https://github.com/zensical/zensical/issues/750
+repo_name = "detachhead/python-type-checker-comparison"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
