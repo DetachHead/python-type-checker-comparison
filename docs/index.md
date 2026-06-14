@@ -190,7 +190,7 @@
 | legacy `namedtuple` wrong name                      |                                                                            | `mismatched-type-name`                                                           | `name-mismatch`                                                                                                                                               |
 | invalid `TYPE_CHECKING` assignment                  |                                                                            | `invalid-type-checking-constant`                                                 | [issue](https://github.com/facebook/pyrefly/issues/3756)                                                                                                      |
 | generic `Enum`                                      |                                                                            | `invalid-generic-enum`                                                           | `invalid-inheritance`                                                                                                                                         |
-| invalid use of `@dataclass`                         |                                                                            | `invalid-dataclass`                                                              | `bad-class-definition`[^10]                                                                                                                                   |
+| invalid use of `@dataclass`                         |                                                                            | `invalid-dataclass`                                                              | `bad-class-definition`                                                                                                                                        |
 | invalid override on frozen dataclass                |                                                                            | `invalid-dataclass-override`                                                     | `bad-class-definition`                                                                                                                                        |
 | assign to instance variable from class              |                                                                            | [issue](https://github.com/astral-sh/ty/issues/3721)                             | [issue](https://github.com/facebook/pyrefly/issues/3750)                                                                                                      |
 | instance layout conflict                            |                                                                            | `instance-layout-conflict`                                                       | `invalid-inheritance`                                                                                                                                         |
@@ -235,8 +235,6 @@
 [^7]: Lint rule covered by ruff, not in scope for a type checker
 
 [^8]: This rule is mostly broken, see https://github.com/facebook/pyrefly/issues/3689
-
-[^10]: The `NamedTuple` example from ty's documentation is not reported, see https://github.com/facebook/pyrefly/issues/3751
 
 [^11]: Does not detect invalid `# pyright:` comments, only `# type:` ones
 
