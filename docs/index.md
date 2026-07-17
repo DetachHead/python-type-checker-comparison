@@ -201,7 +201,6 @@
 | duplicate `KW_ONLY`                                 |                                                                            | `duplicate-kw-only`                                                              | [issue](https://github.com/facebook/pyrefly/issues/3737)                                                                                                      |
 | empty function body                                 |                                                                            | `empty-body`                                                                     | [issue](https://github.com/facebook/pyrefly/issues/3738)                                                                                                      |
 | invalid metaclass                                   |                                                                            | `invalid-metaclass`                                                              | `invalid-inheritance`                                                                                                                                         |
-| invalid `TypeGuard`/`TypeIs` call                   |                                                                            | `invalid-type-guard-call`[^12]                                                   | [^12]                                                                                                                                                         |
 | `TypedDict` unpacked class arguments                |                                                                            | `invalid-typed-dict-header`                                                      | `invalid-inheritance`                                                                                                                                         |
 | conditionally defined member                        |                                                                            | `possibly-missing-attribute`,`possibly-missing-implicit-call`                    | [issue](https://github.com/facebook/pyrefly/issues/2558)                                                                                                      |
 | conditionally defined import                        | [issue](https://github.com/detachhead/basedpyright/issues/107)             | `possibly-missing-import`                                                        | [issue](https://github.com/facebook/pyrefly/issues/2558)                                                                                                      |
@@ -237,8 +236,6 @@
 [^8]: This rule is mostly broken, see https://github.com/facebook/pyrefly/issues/3689
 
 [^11]: Does not detect invalid `# pyright:` comments, only `# type:` ones
-
-[^12]: This rule doesn't seem to work and i think it should be deleted. see https://github.com/astral-sh/ty/issues/3991
 
 [^14]: This seems like a pyrefly-exclusive rule, and also doesn't seem to work. see https://github.com/facebook/pyrefly/issues/3785
 
