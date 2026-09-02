@@ -14,6 +14,32 @@
       }
     },
     {
+      "label": "rumdl check",
+      "type": "process",
+      "command": "pw",
+      "args": ["uv", "run", "rumdl", "check"],
+      "presentation": {
+        "clear": true
+      },
+      "problemMatcher": [],
+      "windows": {
+        "command": "pw.bat"
+      }
+    },
+    {
+      "label": "rumdl fix",
+      "type": "process",
+      "command": "pw",
+      "args": ["uv", "run", "rumdl", "fmt"],
+      "presentation": {
+        "clear": true
+      },
+      "problemMatcher": [],
+      "windows": {
+        "command": "pw.bat"
+      }
+    },
+    {
       "label": "dprint",
       "type": "shell",
       "command": "./pw",

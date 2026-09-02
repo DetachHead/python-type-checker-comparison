@@ -224,32 +224,32 @@
 
 [^3]: Some checks are not present in ty, but are covered by ruff. It's safe to assume that astral won't duplicate functionality they already have in their linter, so we combine the two tools in this table. to avoid ambiguity, we reference the cryptic code when referring to ruff rules rather than their human readable name.
 
-[^4]: Requires config to explicitly ban `Any`
-
 [^5]: This rule barely works, see https://github.com/astral-sh/ty/issues/2158
 
 [^6]: This rule is half broken, see https://github.com/facebook/pyrefly/issues/3660
 
+[^implicit-any-attribute]: see https://github.com/facebook/pyrefly/issues/3661#issuecomment-5098798075
+
 [^7]: Lint rule covered by ruff, not in scope for a type checker
 
-[^8]: This rule is mostly broken, see https://github.com/facebook/pyrefly/issues/3689
+[^untyped-decorator]: doesn't catch most cases, see https://github.com/facebook/pyrefly/issues/3661#issuecomment-5099332062
 
-[^11]: Does not detect invalid `# pyright:` comments, only `# type:` ones
-
-[^15]: These are lint rules specific to a 3rd party library which are out of scope for a type checker, so i'm not going to bother with these
+[^bad-assignment]: requires [`treat-all-caps-as-final`](https://pyrefly.org/en/docs/configuration/#treat-all-caps-as-final) to be enabled
 
 [^16]: Doesn't catch everything, see https://github.com/facebook/pyrefly/issues/3690
 
-[^17]: Not the intended use case for this rule, it reports all unannotated class attributes not just `Protocol`s
+[^11]: Does not detect invalid `# pyright:` comments, only `# type:` ones
 
-[^invalid-attribute-access]: see https://github.com/astral-sh/ty/issues/3992
+[^8]: This rule is mostly broken, see https://github.com/facebook/pyrefly/issues/3689
+
+[^4]: Requires config to explicitly ban `Any`
+
+[^17]: Not the intended use case for this rule, it reports all unannotated class attributes not just `Protocol`s
 
 [^invalid-sentinel]: doesn't currently report mismatched sentinel name, see https://github.com/facebook/pyrefly/issues/4142#issuecomment-5087594256
 
 [^legacy-typevar]: see https://github.com/facebook/pyrefly/issues/3754#issuecomment-4678649318
 
-[^untyped-decorator]: doesn't catch most cases, see https://github.com/facebook/pyrefly/issues/3661#issuecomment-5099332062
+[^invalid-attribute-access]: see https://github.com/astral-sh/ty/issues/3992
 
-[^implicit-any-attribute]: see https://github.com/facebook/pyrefly/issues/3661#issuecomment-5098798075
-
-[^bad-assignment]: requires [`treat-all-caps-as-final`](https://pyrefly.org/en/docs/configuration/#treat-all-caps-as-final) to be enabled
+[^15]: These are lint rules specific to a 3rd party library which are out of scope for a type checker, so i'm not going to bother with these
