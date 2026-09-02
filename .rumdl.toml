@@ -1,0 +1,37 @@
+[global]
+flavor = "mkdocs"
+enable = ["ALL"]
+disable = [
+  # rules we disable because we don't like them or they aren't relevant to this project:
+  "descriptive-link-text", # usually fine because the surrounding text has context
+  "heading-capitalization",
+
+  # rules we disable because they aren't needed when using zensical:
+  "no-bare-urls", # we use pymdownx.magiclink
+  "heading-anchor-collision", # zensical always generates unique anchor links
+
+  # rules we disable because they conflict with dprint:
+  "list-continuation-indent",
+  "table-format",
+  "emphasis-style",
+  "line-length",
+]
+
+[MD033]
+allowed-elements = ["no-markdown-equivalent"]
+table-allowed-elements = ["no-markdown-equivalent"]
+
+[MD040]
+# this checks github known languages, but mkdocs uses pygments: https://pygments.org/languages/
+# not sure how different they are if at all, but if we encounter any problems we should prob
+# open an issue on rumdl
+unknown-language-action = "warn"
+
+[MD057]
+compact-paths = true
+
+[MD063]
+style = 'sentence-case'
+
+[MD082]
+allow-parent-headings = true

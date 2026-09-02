@@ -9,5 +9,6 @@ dependencies = []
 [dependency-groups]
 dev = [
   "dprint-py>=0.53.1.0",
+  "rumdl>=0.2.62",
   "zensical>=0.0.45",
 ]
