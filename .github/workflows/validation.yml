@@ -13,8 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-
       - run: ./pw uv sync --locked
 
       - run: ./pw uv run dprint check
